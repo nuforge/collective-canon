@@ -14,7 +14,7 @@ Becoming a **community-driven project** is one of my intentions and any interest
 
 I personally want to use this "thing" I am building in my head. All the tools are available, but **I won't be able to complete this by myself**.
 
-## **2. The (not so) Great Link**: 
+## **2. The (not-so-great) Link**: 
 The link below points to the prototype app. It's a page hosted on **figma.com** and should open a new window in your browser. (Figma is an online tool for designing apps and websites and sharing those design with teams/clients.)
 
 - [Collective Canon design prototype](https://www.figma.com/proto/ZGGNjFIBcq5x3Nt5vxcFpK/Star-Trek-Adventures?page-id=2786%3A38426&node-id=2786-39251&node-type=canvas&viewport=370%2C200%2C0.31&t=Kow2wBaSiTcYC9qx-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2786%3A39238)
