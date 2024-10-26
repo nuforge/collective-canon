@@ -1,7 +1,7 @@
 # Collective Canon
 Requesting a "few moments" of attention and perhaps feedback on a project for/related to [Star Trek Adventures](https://modiphius.us/collections/star-trek-adventures-tabletop-rpg). Included below is a link to a "[rough demo](https://www.figma.com/proto/ZGGNjFIBcq5x3Nt5vxcFpK/Star-Trek-Adventures?node-id=2786-38426&node-type=canvas&viewport=107%2C277%2C0.55&t=BJyAVSceXvpc9Sbz-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2786%3A39238)" for what I'm about to describe.
 
-![Banner-blank](https://github.com/user-attachments/assets/4ab9c6f5-3d38-401e-82e0-a2d03174945a)
+![Banner-blank](https://github.com/user-attachments/assets/48e66ef0-ae7d-4e85-970b-4795bf42e0af)
 
 ## **1. The Intention**:
 **Star Trek Adventures** and **Captain's Log** seem ripe for a website and/or app for players to collect their **mission logs**. A tool to record adventures, **story events**, **epic dice rolls**, recurring NPCs, **character progression**, etc, for STA (or others) and connecting those individual elements together in **meaningful ways**.
