@@ -10,7 +10,7 @@ The most basic user interaction would be quick and simple 'Mission Log' entries 
 
 Keeping in spirit with the flexibility Star Trek Adventures has to offer, the complexity of engagement from there would scale by **individual preference**. A simple unique "**quantum signature** " for logs to identify unique or branching "**timelines**," allow for creator-approved canon, **crossovers** with other PC/NPCs/Ships, time travel, time loops, alternate realities, wars, etc. **Admiralty campaigns** which could run in "real time" with multiple play-groups reporting weekly/monthly with a sessions mission progress from their ship and crew.
 
-Becoming a **community-driven project** is one of my intentions and any interest or help at this stage would be greatly appreciated. I really, ultimately, envision an intuitive and **storytelling** and **learning toolbox**; not simply another digital character sheet or dice rolling app for STA.
+Becoming a **community-driven project** is one of my intentions and any interest or help at this stage would be greatly appreciated. I really, ultimately, envision an intuitive and **storytelling** and **learning toolbox**; not simply another digital character sheet or dice rolling app for a single TTRPG.
 
 I personally want to use this "thing" I am building in my head. All the tools are available, but **I won't be able to complete this by myself**.
 
