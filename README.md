@@ -1,5 +1,5 @@
 # Collective Canon
-Requesting a "few moments" of attention and perhaps feedback on a project for/related to [Star Trek Adventures](https://modiphius.us/collections/star-trek-adventures-tabletop-rpg). Included below is a link to a "[rough demo](https://www.figma.com/proto/ZGGNjFIBcq5x3Nt5vxcFpK/Star-Trek-Adventures?page-id=2786%3A38426&node-id=2786-39251&node-type=canvas&viewport=370%2C200%2C0.31&t=Kow2wBaSiTcYC9qx-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2786%3A39238)" for what I'm about to describe.
+Requesting a "few moments" of attention and perhaps feedback on a project for/related to [Star Trek Adventures](https://modiphius.us/collections/star-trek-adventures-tabletop-rpg). Included below is a link to a "[rough demo](https://www.figma.com/proto/ZGGNjFIBcq5x3Nt5vxcFpK/Star-Trek-Adventures?node-id=2786-38426&node-type=canvas&viewport=107%2C277%2C0.55&t=BJyAVSceXvpc9Sbz-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2786%3A39238)" for what I'm about to describe.
 
 ![Banner-blank](https://github.com/user-attachments/assets/4ab9c6f5-3d38-401e-82e0-a2d03174945a)
 
@@ -17,7 +17,7 @@ I personally want to use this "thing" I am building in my head. All the tools ar
 ## **2. The (not-so-great) Link**: 
 The link below points to the prototype app. It's a page hosted on **figma.com** and should open a new window in your browser. (Figma is an online tool for designing apps and websites and sharing those design with teams/clients.)
 
-- [Collective Canon design prototype](https://www.figma.com/proto/ZGGNjFIBcq5x3Nt5vxcFpK/Star-Trek-Adventures?page-id=2786%3A38426&node-id=2786-39251&node-type=canvas&viewport=370%2C200%2C0.31&t=Kow2wBaSiTcYC9qx-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2786%3A39238)
+- [Collective Canon design prototype](https://www.figma.com/proto/ZGGNjFIBcq5x3Nt5vxcFpK/Star-Trek-Adventures?node-id=2786-38426&node-type=canvas&viewport=107%2C277%2C0.55&t=BJyAVSceXvpc9Sbz-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2786%3A39238)
 
 The page should display an animated splash screen on a simulated mobile phone or tablet in your browser page. **IMPORTANT**: This is my first time sharing with Figma, so if your first reaction is "**why would someone post this broken mess/blank page?**" please let me know, so I can figure why others might not be seeing what I'm seeing. I know Figma's previews have an issue with responsive, so everything might be wonky, I can't change that, sadly. There is an option in the menu to adjust aspect resolution.
 
