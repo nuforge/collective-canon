@@ -1,5 +1,5 @@
 # Collective Canon
-Requesting a "few moments" of attention and perhaps feedback on a project for/related to STA. Included below is a link to a "[rough demo](https://www.figma.com/proto/ZGGNjFIBcq5x3Nt5vxcFpK/Star-Trek-Adventures?page-id=2786%3A38426&node-id=2786-39251&node-type=canvas&viewport=370%2C200%2C0.31&t=Kow2wBaSiTcYC9qx-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2786%3A39238)" for what I'm about to describe.
+Requesting a "few moments" of attention and perhaps feedback on a project for/related to [Star Trek Adventures](https://modiphius.us/collections/star-trek-adventures-tabletop-rpg). Included below is a link to a "[rough demo](https://www.figma.com/proto/ZGGNjFIBcq5x3Nt5vxcFpK/Star-Trek-Adventures?page-id=2786%3A38426&node-id=2786-39251&node-type=canvas&viewport=370%2C200%2C0.31&t=Kow2wBaSiTcYC9qx-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2786%3A39238)" for what I'm about to describe.
 
 ![Banner-blank](https://github.com/user-attachments/assets/4ab9c6f5-3d38-401e-82e0-a2d03174945a)
 
