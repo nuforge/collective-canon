@@ -1,6 +1,8 @@
 # Collective Canon
 Requesting a "few moments" of attention and perhaps feedback on a project for/related to STA. Included below is a link to a "[rough demo](https://www.figma.com/proto/ZGGNjFIBcq5x3Nt5vxcFpK/Star-Trek-Adventures?page-id=2786%3A38426&node-id=2786-39251&node-type=canvas&viewport=370%2C200%2C0.31&t=Kow2wBaSiTcYC9qx-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2786%3A39238)" for what I'm about to describe.
 
+![Banner](https://github.com/user-attachments/assets/2c83188c-eff2-48ea-a059-b7769ed9ccb1)
+
 ## **1. The Intention**:
 **Star Trek Adventures** and **Captain's Log** seem ripe for a website and/or app for players to collect their **mission logs**. A tool to record adventures, **story events**, **epic dice rolls**, recurring NPCs, **character progression**, etc, for STA (or others) and connecting those individual elements together in **meaningful ways**.
 
