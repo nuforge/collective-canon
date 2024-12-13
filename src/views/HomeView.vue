@@ -1,21 +1,19 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <main>
     <div class="logo">
       <h1>Collective Canon</h1>
       <h2>Continuum of Community Continuity</h2>
     </div>
-    <v-row>
-      <v-btn class="btn-login" prepend-icon="mdi-chevron-right" append-icon="mdi-chevron-left" text="Login"
-        variant="outlined" rounded="lg"></v-btn>
+    <v-row justify="center">
+      <v-col class="ma-2">
+        <LoginDialog />
+      </v-col>
     </v-row>
-    <v-row class="tagline">
-      “Creatively collaborate, cha'DIch!”
-    </v-row>
-    <v-row>
-      a “barely-alpha” prototype
+    <v-row justify="center">
+      <v-col>
+        <p justify="center" class="tagline text-medium-emphasis">“Creatively collaborate, cha'DIch!”</p>
+        <p justify="center" class="text-disabled">a “barely-alpha” prototype</p>
+      </v-col>
     </v-row>
     <div class="container">
       <img src="@/assets/images/banner.png" alt="Banner" class="banner-image" />
@@ -23,6 +21,11 @@
     </div>
   </main>
 </template>
+
+<script setup lang="ts">
+
+import LoginDialog from '@/components/LoginDialog.vue';
+</script>
 
 <style scoped>
 main {
