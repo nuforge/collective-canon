@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <v-main>
     <div class="logo">
       <h1>Collective Canon</h1>
       <h2>Continuum of Community Continuity</h2>
@@ -19,7 +19,7 @@
       <img src="@/assets/images/banner.png" alt="Banner" class="banner-image" />
       <div class="overlay"></div>
     </div>
-  </main>
+  </v-main>
 </template>
 
 <script setup lang="ts">
@@ -27,7 +27,12 @@ import LoginDialog from '@/components/LoginDialog.vue';
 </script>
 
 <style scoped>
-main {
+main,
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, #000000, var(--vt-c-blue-faded));
   text-align: center;
 }
 

@@ -7,7 +7,7 @@
           <!-- Your header, logo, navigation, etc. -->
         </header>
         <main>
-          <router-view></router-view> <!-- The main content will be rendered here -->
+          <!-- The main content will be rendered here -->
         </main>
         <footer>
           <!-- Footer content -->
@@ -24,6 +24,12 @@ defineProps({
 </script>
 
 <style scoped>
+.main {
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, #000000, var(--vt-c-blue-faded));
+}
+
 .main-layout {
   display: flex;
   flex-direction: column;
