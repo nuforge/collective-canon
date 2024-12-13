@@ -1,0 +1,17 @@
+:root {
+  --sta-gold: #d39e00;
+  --sta-red: #c4191a;
+  --sta-blue: #2283b1;
+  --sta-teak: #38aaa2;
+
+  --sta-moment: #50a7e9;
+  --sta-threat: #da7e2e;
+
+  --sta-1-species: #e2a952;
+  --sta-2-environment: #e5ed71;
+  --sta-3-uprbringing: #aaf183;
+  --sta-4-career-path: #3e9cda;
+  --sta-5-experience: #ad82ea;
+  --sta-6-career-event: #de84ce;
+  --sta-7-finishing-touches: #cccccc;
+}
