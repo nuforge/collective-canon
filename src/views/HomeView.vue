@@ -23,7 +23,6 @@
 </template>
 
 <script setup lang="ts">
-
 import LoginDialog from '@/components/LoginDialog.vue';
 </script>
 
@@ -59,11 +58,6 @@ main {
   top: 0;
   left: 0;
   z-index: 0;
-}
-
-.btn-login {
-  border-top: none;
-  border-bottom: none;
 }
 
 .logo {

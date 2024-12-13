@@ -13,8 +13,11 @@ import '@mdi/font/css/materialdesignicons.css'
 import {
   VApp,
   VAppBar,
+  VAppBarNavIcon,
+  VAppBarTitle,
   VContainer,
   VMain,
+  VResponsive,
   VNavigationDrawer,
   VList,
   VListItem,
@@ -24,7 +27,10 @@ import {
   VRow,
   VCol,
   VTextField,
+  VImg,
   VBtn,
+  VAvatar,
+  VBadge,
   VIcon,
   VCard,
   VCardText,
@@ -32,6 +38,7 @@ import {
   VDialog,
   VCheckbox,
   VSpacer,
+  VBottomSheet,
 } from 'vuetify/components'
 
 const app = createApp(App)
@@ -49,8 +56,11 @@ const vuetify = createVuetify({
   components: {
     VApp,
     VAppBar,
+    VAppBarNavIcon,
+    VAppBarTitle,
     VContainer,
     VMain,
+    VResponsive,
     VNavigationDrawer,
     VList,
     VListItem,
@@ -60,14 +70,18 @@ const vuetify = createVuetify({
     VRow,
     VCol,
     VTextField,
+    VImg,
     VCard,
     VCardText,
     VCardActions,
     VIcon,
     VBtn,
+    VAvatar,
+    VBadge,
     VDialog,
     VCheckbox,
     VSpacer,
+    VBottomSheet,
   },
 })
 

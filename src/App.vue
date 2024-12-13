@@ -1,26 +1,11 @@
 <template>
   <v-app>
-    <v-navigation-drawer>
-      <v-list>
-        <v-list-item title="Navigation drawer">
-          <RouterLink to="/">Home</RouterLink>
-        </v-list-item>
-        <v-list-item title="Navigation drawer">
-          <RouterLink to="/about">About</RouterLink>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-main>
-      <v-container>
-        <RouterView />
-      </v-container>
-    </v-main>
+    <RouterView />
   </v-app>
 </template>
 
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 </script>
 
 <style scoped>

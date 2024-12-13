@@ -19,7 +19,7 @@
           <v-checkbox label="Remember Me" v-model="rememberMe"></v-checkbox>
           <div>
             <v-btn text="Cancel" variant="plain" @click="dialog = false"></v-btn>
-            <v-btn text="Login" variant="tonal" @click="dialog = false"></v-btn>
+            <v-btn text="Login" variant="tonal" to="/app"></v-btn>
           </div>
         </v-card-actions>
       </v-card>
@@ -33,3 +33,10 @@ import { ref } from 'vue';
 const dialog = ref(false);
 const rememberMe = ref(false);
 </script>
+
+<style scoped>
+.btn-login {
+  border-top: none;
+  border-bottom: none;
+}
+</style>

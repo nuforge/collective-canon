@@ -2,18 +2,11 @@
 @import './sta.css';
 @import './fonts.css';
 
-html,
-body,
-.v-main {
+#app {
+  max-width: 1280px;
   margin: 0;
   height: 100%;
   background: linear-gradient(to bottom, #000000, var(--vt-c-blue-faded));
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  font-weight: normal;
 }
 
 a,
