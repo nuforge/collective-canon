@@ -1,27 +1,45 @@
 <template>
   <v-bottom-sheet inset opacity="0.1">
-    <v-card prepend-icon="mdi-link" density="compact" class="rounded">
-      <template v-slot:title>
-        <span>Momentum</span>
-      </template>
-      <v-card-text>
-        Whenever you attempt a task and generate more successes than the Difficulty, extra successes become Momentum, a
-        valuable resource allowing you to improve on your success or save for the group.
-        <v-row class="flex justify-space-between">
-          <v-col><v-icon icon="mdi-hexagon-outline" color="var(--sta-momentum)"></v-icon>0</v-col>
-          <v-col><v-icon icon="mdi-hexagon-slice-1" color="var(--sta-momentum)"></v-icon>1</v-col>
-          <v-col><v-icon icon="mdi-hexagon-slice-2" color="var(--sta-momentum)"></v-icon>2</v-col>
-          <v-col><v-icon icon="mdi-hexagon-slice-3" color="var(--sta-momentum)"></v-icon>3</v-col>
-          <v-col><v-icon icon="mdi-hexagon-slice-4" color="var(--sta-momentum)"></v-icon>4</v-col>
-          <v-col><v-icon icon="mdi-hexagon-slice-5" color="var(--sta-momentum)"></v-icon>5</v-col>
-          <v-col><v-icon icon="mdi-hexagon-slice-6" color="var(--sta-momentum)"></v-icon>6</v-col>
-          <v-col><v-icon icon="mdi-hexagon-multiple" color="var(--sta-momentum)"></v-icon>7+</v-col>
-        </v-row>
+    <v-card density="compact" class="rounded border-t-md">
+      <v-card-title class="d-flex px-1 py-0 justify-space-between border-b-sm">
+        <vtag icon="mdi-hexagon-multiple-outline" text="Momentum" color="var(--sta-momentum)"></vtag>
+        <v-chip prepend-icon="mdi-link" variant="text" size="small">2e Handbook</v-chip>
+      </v-card-title>
+      <v-card-text class="py-2">
+        <p>Whenever you attempt a task and generate more successes than the <a>Difficulty</a>,
+          extra successes become <a>Momentum</a>,
+          a
+          valuable resource allowing you to improve on your success or save for the group.</p>
       </v-card-text>
+      <v-card-actions class="py-1">
+        <v-chip-group>
+          <vtag icon="mdi-hexagon-outline" text="0" color="var(--sta-momentum)"></vtag>
+          <vtag icon="mdi-hexagon-slice-1" text="1" color="var(--sta-momentum)"></vtag>
+          <vtag icon="mdi-hexagon-slice-2" text="2" color="var(--sta-momentum)"></vtag>
+          <vtag icon="mdi-hexagon-slice-3" text="3" color="var(--sta-momentum)"></vtag>
+          <vtag icon="mdi-hexagon-slice-4" text="4" color="var(--sta-momentum)"></vtag>
+          <vtag icon="mdi-hexagon-slice-5" text="5" color="var(--sta-momentum)"></vtag>
+          <vtag icon="mdi-hexagon-slice-6" text="6" color="var(--sta-momentum)"></vtag>
+          <vtag icon="mdi-hexagon-multiple" text="7+" color="var(--sta-momentum)"></vtag>
+        </v-chip-group>
+      </v-card-actions>
     </v-card>
   </v-bottom-sheet>
 </template>
 
 <script setup lang="ts">
+import vtag from '@/components/VTag.vue';
 
 </script>
+
+<style scoped>
+a {
+  color: var(--sta-momentum);
+  cursor: pointer;
+
+}
+
+.momentum {
+  color: var(--sta-momentum)
+}
+</style>

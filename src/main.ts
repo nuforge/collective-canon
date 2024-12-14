@@ -34,12 +34,17 @@ import {
   VBadge,
   VIcon,
   VCard,
+  VCardItem,
+  VCardTitle,
   VCardText,
   VCardActions,
+  VSheet,
   VDialog,
   VCheckbox,
   VSpacer,
   VBottomSheet,
+  VChip,
+  VChipGroup,
 } from 'vuetify/components'
 
 const app = createApp(App)
@@ -74,8 +79,11 @@ const vuetify = createVuetify({
     VTextField,
     VImg,
     VCard,
+    VCardItem,
+    VCardTitle,
     VCardText,
     VCardActions,
+    VSheet,
     VIcon,
     VBtn,
     VAvatar,
@@ -84,6 +92,8 @@ const vuetify = createVuetify({
     VCheckbox,
     VSpacer,
     VBottomSheet,
+    VChip,
+    VChipGroup,
   },
 })
 

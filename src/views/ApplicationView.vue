@@ -10,7 +10,8 @@
     <template v-slot:append>
       <nav>
         <v-btn icon="mdi-calendar-edit"></v-btn>
-        <v-btn icon="mdi-hexagon-slice-2" class="momentum" @click="momentum = !momentum"></v-btn>
+        <vtag icon="mdi-hexagon-slice-2" text="2" color="var(--sta-momentum)" class="border-b-md rounded px-3"
+          @click="momentum = !momentum" />
       </nav>
     </template>
   </v-app-bar>
@@ -32,6 +33,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import MomentumSheet from '@/components/sheets/MomentumSheet.vue';
+import vtag from '@/components/VTag.vue';
 
 const drawer = ref(false);
 const momentum = ref(false);
