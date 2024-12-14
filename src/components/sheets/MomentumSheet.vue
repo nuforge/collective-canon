@@ -15,14 +15,8 @@
       </v-card-text>
       <v-card-actions class="pa-1">
         <v-chip-group column>
-          <vtag icon="mdi-hexagon-outline" text="0" color="var(--sta-momentum)"></vtag>
-          <vtag icon="mdi-hexagon-slice-1" text="1" color="var(--sta-momentum)"></vtag>
-          <vtag icon="mdi-hexagon-slice-2" text="2" color="var(--sta-momentum)"></vtag>
-          <vtag icon="mdi-hexagon-slice-3" text="3" color="var(--sta-momentum)"></vtag>
-          <vtag icon="mdi-hexagon-slice-4" text="4" color="var(--sta-momentum)"></vtag>
-          <vtag icon="mdi-hexagon-slice-5" text="5" color="var(--sta-momentum)"></vtag>
-          <vtag icon="mdi-hexagon-slice-6" text="6" color="var(--sta-momentum)"></vtag>
-          <vtag icon="mdi-hexagon-multiple" text="7+" color="var(--sta-momentum)"></vtag>
+          <vtag v-for="i in range" :key="i" :icon="momentum.getIcon(i)" :text="i.toString()" color="var(--sta-momentum)"
+            @click="setMomentum(i)"></vtag>
         </v-chip-group>
       </v-card-actions>
     </v-card>
@@ -30,7 +24,19 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
 import vtag from '@/components/VTag.vue';
+import { useCounterStore } from '@/stores/counter';
+import Momentum from '@/sta/Momentum' // Import your Momentum class
+
+const range = Array.from({ length: 8 }, (_, i) => i);
+
+const momentum = new Momentum(0);
+const momentumStore = ref(useCounterStore());
+
+const setMomentum = (value: number) => {
+  momentumStore.value.setMomentum(value);
+}
 
 </script>
 

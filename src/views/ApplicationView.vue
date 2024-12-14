@@ -10,10 +10,10 @@
     <template v-slot:append>
       <nav>
         <v-btn icon="mdi-calendar-edit"></v-btn>
-        <vtag :icon="momentum.getIcon()" :text="momentum.value.toString()" color="var(--sta-momentum)"
+        <vtag :icon="momentum.momentumIcon" :text="momentum.momentumValue.toString()" color="var(--sta-momentum)"
           @click="showMomentum = !showMomentum" />
-        <v-btn icon="mdi-plus" @click="momentum.increment()"></v-btn>
-        <v-btn icon="mdi-minus" @click="momentum.decrement()"></v-btn>
+        <v-btn icon="mdi-plus" @click="momentum.incrementMomentum()"></v-btn>
+        <v-btn icon="mdi-minus" @click="momentum.decrementMomentum()"></v-btn>
       </nav>
     </template>
   </v-app-bar>
@@ -36,10 +36,10 @@
 import { ref } from 'vue';
 import MomentumSheet from '@/components/sheets/MomentumSheet.vue';
 import vtag from '@/components/VTag.vue';
-import Momentum from '@/sta/Momentum';
 
+import { useCounterStore } from '@/stores/counter';
+const momentum = ref(useCounterStore());
 // Create a Momentum instance with an initial value of 3
-const momentum = ref(new Momentum(3));
 
 const drawer = ref(false);
 const showMomentum = ref(false);
