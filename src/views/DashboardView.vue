@@ -1,24 +1,30 @@
 <template>
-  <h1>Character Profile</h1>
-  <p>Character Name: {{ characterName }}</p>
-  <v-row no-gutters justify="space-around">
-    <v-col cols="1">
-      <v-chip-group column class="d-flex align-start">
-        <vtag v-for="(att, index) in attributes" :key="index" :icon="att.icon" :text="att.valueStr" :color="att.color">
-        </vtag>
-      </v-chip-group>
-    </v-col>
-    <v-col>
-      <v-img :src="image" alt="Jenny Everywhere" :width="300" />
-    </v-col>
-    <v-col cols="1">
-      <v-chip-group column class="d-flex  align-start">
-        <vtag v-for="(att, index) in departments" :key="index" :icon="att.icon" :text="att.valueStr" :color="att.color">
-        </vtag>
-      </v-chip-group>
-    </v-col>
-    <v-spacer></v-spacer>
-  </v-row>
+  <v-card>
+    <v-card-title>{{ characterName }}</v-card-title>
+    <v-card-text>
+      <v-row>
+        <v-responsive></v-responsive>
+        <v-col cols="auto" class="px-0">
+          <v-chip-group direction="vertical">
+            <vtag v-for="(att, index) in attributes" :key="index" :icon="att.icon" :text="att.valueStr"
+              :color="att.color">
+            </vtag>
+          </v-chip-group>
+        </v-col>
+        <v-col cols="auto" class="px-0">
+          <v-img :src="image" :alt="characterName" :width="300" />
+        </v-col>
+        <v-col cols="auto" class="px-0">
+          <v-chip-group direction="vertical" column>
+            <vtag v-for="(att, index) in departments" :key="index" :icon="att.icon" :text="att.valueStr"
+              :color="att.color">
+            </vtag>
+          </v-chip-group>
+        </v-col>
+        <v-spacer></v-spacer>
+      </v-row>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script setup lang="ts">
@@ -38,10 +44,10 @@ const characterName = ref('Jenny Everywhere')
 const attributes = ref([
   new Attribute('Control', 9, 'mdi-image-filter-center-focus-strong', getCssVariable('--sta-teal')),
   new Attribute('Daring', 11, 'mdi-gamepad', getCssVariable('--sta-teal')),
-  new Attribute('Fitness', 7, 'mdi-dumbbell', getCssVariable('--sta-teal')),
-  new Attribute('Presence', 10, 'mdi-run-fast', getCssVariable('--sta-teal')),
-  new Attribute('Insight', 10, 'mdi-clover-outline', getCssVariable('--sta-teal')),
-  new Attribute('Reason', 8, 'mdi-shield-account-outline', getCssVariable('--sta-teal')),
+  new Attribute('Fitness', 7, 'mdi-heart-pulse', getCssVariable('--sta-teal')),
+  new Attribute('Presence', 10, 'mdi-account-multiple', getCssVariable('--sta-teal')),
+  new Attribute('Insight', 10, 'mdi-head-snowflake', getCssVariable('--sta-teal')),
+  new Attribute('Reason', 8, 'mdi-brain', getCssVariable('--sta-teal')),
 ])
 const departments = ref([
   new Attribute('Command', 3, 'mdi-account-group', getCssVariable('--sta-command')),
