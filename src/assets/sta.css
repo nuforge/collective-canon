@@ -15,3 +15,7 @@
   --sta-6-career-event: #de84ce;
   --sta-7-finishing-touches: #cccccc;
 }
+
+.sta-momentum {
+  color: var(--sta-momentum);
+}
