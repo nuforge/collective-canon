@@ -23,7 +23,6 @@ class Momentum {
 
   // Increment momentum (up to a max of 7)
   increment(): void {
-    console.log('incrementing momentum')
     if (this._value < 7) {
       this._value++
     }

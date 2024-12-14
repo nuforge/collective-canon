@@ -2,10 +2,19 @@
   --sta-gold: #d39e00;
   --sta-red: #c4191a;
   --sta-blue: #2283b1;
-  --sta-teak: #38aaa2;
+  --sta-teal: #38aaa2;
 
   --sta-momentum: #50a7e9;
   --sta-threat: #da7e2e;
+
+  --sta-attribute: #38aaa2;
+
+  --sta-command: var(--sta-gold);
+  --sta-conn: var(--sta-gold);
+  --sta-engineering: var(--sta-red);
+  --sta-security: var(--sta-red);
+  --sta-science: var(--sta-blue);
+  --sta-medicine: var(--sta-blue);
 
   --sta-1-species: #e2a952;
   --sta-2-environment: #e5ed71;
