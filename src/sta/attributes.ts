@@ -1,7 +1,7 @@
 // Definition of attributes used in the game
 const attributeColor = '#38aaa2'
 
-interface Attribute {
+export interface Attribute {
   id: string
   name: string
   type: string
@@ -9,9 +9,10 @@ interface Attribute {
   color: string
   icon: string
   link?: string
+  value?: number
 }
 // Example attributes with game rules
-const attributes: Record<string, Attribute> = {
+export const attributes: Record<string, Attribute> = {
   control: {
     id: 'control',
     name: 'Control',
@@ -67,5 +68,3 @@ const attributes: Record<string, Attribute> = {
     link: 'https://example.com/control',
   },
 }
-
-export default attributes

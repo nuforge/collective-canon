@@ -15,8 +15,14 @@
       </v-card-text>
       <v-card-actions class="pa-1">
         <v-chip-group column>
-          <vtag v-for="i in range" :key="i" :icon="momentum.getIcon(i)" :text="i.toString()" color="var(--sta-momentum)"
-            @click="setMomentum(i)"></vtag>
+          <vtag prepend-icon="mdi-arrow-down-bold-hexagon-outline" @click="momentumStore.decrementMomentum()" text="-"
+            color="var(--sta-momentum)">
+          </vtag>
+          <vtag prepend-icon="mdi-arrow-up-bold-hexagon-outline" @click="momentumStore.incrementMomentum()" text="+"
+            color="var(--sta-momentum)">
+          </vtag>
+          <vtag v-for=" i in range" :key="i" :prepend-icon="momentum.getIcon(i)" :text="i.toString()"
+            color="var(--sta-momentum)" @click="setMomentum(i)"></vtag>
         </v-chip-group>
       </v-card-actions>
     </v-card>

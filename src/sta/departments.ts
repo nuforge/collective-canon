@@ -2,8 +2,7 @@
 const departmentRed = '#c4191a'
 const departmentGold = '#d39e00'
 const departmentBlue = '#2283b1'
-
-interface Department {
+export interface Department {
   id: string
   name: string
   type: string
@@ -11,9 +10,11 @@ interface Department {
   color: string
   icon: string
   link?: string
+  value?: number
 }
 // Example departments with game rules
-const departments: Record<string, Department> = {
+
+export const departments: Record<string, Department> = {
   command: {
     id: 'command',
     name: 'Command',
@@ -69,5 +70,3 @@ const departments: Record<string, Department> = {
     link: 'https://example.com/control',
   },
 }
-
-export default departments

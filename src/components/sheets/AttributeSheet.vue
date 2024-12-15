@@ -2,7 +2,7 @@
   <v-bottom-sheet inset persistent close-on-content-click :scrim="false">
     <v-card density="compact" class="rounded border-t-md">
       <v-card-title class="d-flex px-1 py-0 justify-space-between border-b-sm align-center">
-        <vtag :icon="attribute.icon" :text="attribute.name" :color="attribute.color"></vtag>
+        <vtag :prepend-icon="attribute.icon" :text="attribute.name" :color="attribute.color"></vtag>
         <vtag text="2e Handbook" variant="text" size="small" :href="attribute.link" icon="mdi-link"
           append-icon="mdi-open-in-new" class="text-grey-darken-2">
         </vtag>

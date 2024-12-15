@@ -10,10 +10,8 @@
     <template v-slot:append>
       <nav>
         <v-btn icon="mdi-calendar-edit"></v-btn>
-        <vtag :icon="momentum.momentumIcon" :text="momentum.momentumValue.toString()" color="var(--sta-momentum)"
-          @click="showMomentum = !showMomentum" />
-        <v-btn icon="mdi-plus" @click="momentum.incrementMomentum()"></v-btn>
-        <v-btn icon="mdi-minus" @click="momentum.decrementMomentum()"></v-btn>
+        <vtag :prepend-icon="momentum.momentumIcon" :text="momentum.momentumValue.toString()"
+          color="var(--sta-momentum)" @click="showMomentum = !showMomentum" />
       </nav>
     </template>
   </v-app-bar>
