@@ -27,13 +27,42 @@
       </v-row>
       <v-row>
         <v-col>
-          <div v-html="character.name"></div>
+          <h2>Traits</h2>
+          <vtag v-for="(trait, id) in character.traits" :key="id" :text="trait.name" :color="trait.color"
+            :prepend-icon="trait.icon" @click="ShowTrait(trait.id)">
+          </vtag>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <h2>Talents and Abilities</h2>
+          <vtag v-for="(trait, id) in character.talents" :key="id" :text="trait.name" :color="trait.color"
+            :prepend-icon="trait.icon" @click="ShowTalent(trait.id)">
+          </vtag>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <h2>Values</h2>
+          <vtag v-for="(trait, id) in character.values" :key="id" :text="trait.name" :color="trait.color"
+            :prepend-icon="trait.icon" @click="ShowValue(trait.id)">
+          </vtag>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <h2>Focuses</h2>
+          <vtag v-for="(trait, id) in character.focuses" :key="id" :text="trait.name" :color="trait.color"
+            :prepend-icon="trait.icon" @click="ShowFocus(trait.id)">
+          </vtag>
         </v-col>
       </v-row>
     </v-card-text>
   </v-card>
-  <AttributeSheet v-model="showBottom" :attribute="showAttribute">
+  <AttributeSheet v-model="showAttributeDrawer" :attribute="attributeValues">
   </AttributeSheet>
+  <TraitSheet v-model="showTraitDrawer" :trait="traitValues">
+  </TraitSheet>
 </template>
 
 
@@ -42,25 +71,51 @@ import { ref } from 'vue'
 import { attributes } from '@/sta/attributes'
 import { departments } from '@/sta/departments'
 import vtag from '@/components/VTag.vue';
-import Character from '@/sta/character'
 import AttributeSheet from '@/components/sheets/AttributeSheet.vue'
+import TraitSheet from '@/components/sheets/TraitSheet.vue'
+import JennyEverywhere from '@/character/JennyEverywhere'
 
 import image from '@/assets/images/characters/jenny-everywhere.png'
 
-const showBottom = ref(false)
-const showAttribute = ref(attributes['control'])
+const showAttributeDrawer = ref(false)
+const attributeValues = ref(attributes['control'])
+const showTraitDrawer = ref(false)
+const traitValues = ref(attributes['control'])
+
+
+const character = ref(JennyEverywhere)
+
 
 const ShowAttribute = (id: string) => {
   checkDrawer(id)
-  showAttribute.value = attributes[id]
+  attributeValues.value = attributes[id]
 }
 const ShowDepartment = (id: string) => {
   checkDrawer(id)
-  showAttribute.value = departments[id]
+  attributeValues.value = departments[id]
+}
+const ShowTrait = (id: string) => {
+  traitValues.value = character.value.traits[id]
+  showTraitDrawer.value = true
+}
+
+const ShowTalent = (id: string) => {
+  traitValues.value = character.value.talents[id]
+  showTraitDrawer.value = true
+}
+
+const ShowValue = (id: string) => {
+  traitValues.value = character.value.values[id]
+  showTraitDrawer.value = true
+}
+
+const ShowFocus = (id: string) => {
+  traitValues.value = character.value.focuses[id]
+  showTraitDrawer.value = true
 }
 
 const checkDrawer = (id: string) => {
-  if (showBottom.value && showAttribute.value.id === id) {
+  if (showAttributeDrawer.value && attributeValues.value.id === id) {
     closeDrawer()
     return
   }
@@ -68,31 +123,14 @@ const checkDrawer = (id: string) => {
 }
 
 const OpenDrawer = () => {
-  showBottom.value = true
+  showAttributeDrawer.value = true
   return
 }
 
 const closeDrawer = () => {
-  showBottom.value = false
+  showAttributeDrawer.value = false
 }
 
-const character = ref(new Character('Jenny Everywhere'))
-character.value.setAttributes({
-  control: 8,
-  fitness: 7,
-  daring: 11,
-  presence: 10,
-  insight: 11,
-  reason: 9
-})
-character.value.setDepartments({
-  command: 2,
-  conn: 5,
-  engineering: 4,
-  security: 1,
-  medicine: 1,
-  science: 3,
-})
 
 
 </script>

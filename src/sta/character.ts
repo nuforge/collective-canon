@@ -3,12 +3,16 @@ import Momentum from './Momentum'
 import type { Attribute } from '@/sta/attributes'
 import { departments } from '@/sta/departments'
 import type { Department } from '@/sta/departments'*/
+import type Trait from '@/sta/Trait'
 class Character {
   private _name: string
   private _attributes: { [key: string]: number } = {}
   private _departments: { [key: string]: number } = {}
   private _momentum: Momentum
-  private _traits: Array<string>
+  private _traits: { [key: string]: Trait } = {}
+  private _talents: { [key: string]: Trait } = {}
+  private _values: { [key: string]: Trait } = {}
+  private _focuses: { [key: string]: Trait } = {}
 
   constructor(name: string) {
     // Initialize momentum with a default or specified value.
@@ -30,7 +34,6 @@ class Character {
       security: 0,
       science: 0,
     }
-    this._traits = ['Happy', 'Sad', 'Angry']
   }
 
   // Getter for the momentum value
@@ -49,8 +52,21 @@ class Character {
   get departments(): { [key: string]: number } {
     return this._departments
   }
-  get traits(): Array<string> {
+
+  get traits(): { [key: string]: Trait } {
     return this._traits
+  }
+
+  get talents(): { [key: string]: Trait } {
+    return this._talents
+  }
+
+  get values(): { [key: string]: Trait } {
+    return this._values
+  }
+
+  get focuses(): { [key: string]: Trait } {
+    return this._focuses
   }
 
   // Getter for the attribute value
@@ -67,6 +83,24 @@ class Character {
   setName(newName: string): void {
     this._name = newName
   }
+
+  addTrait(trait: Trait): void {
+    this._traits[trait.id] = trait
+  }
+
+  addTalent(talent: Trait): void {
+    this._talents[talent.id] = talent
+  }
+
+  addValue(value: Trait): void {
+    this._values[value.id] = value
+  }
+
+  addFocus(focus: Trait): void {
+    this._focuses[focus.id] = focus
+  }
+
+  // ATTRIBUTES & DEPARTMENTS
 
   // Set the character's attribute value
   setAttribute(attribute: string, newValue: number): void {
