@@ -1,5 +1,5 @@
 <template>
-  <v-chip :prepend-icon="props.icon" variant="text" :class="props.class" rounded="lg">
+  <v-chip :prepend-icon="props.icon" variant="text" :class="props.class" rounded="lg" pill>
     <template v-slot:prepend>
       <v-icon :color="props.color"></v-icon>
     </template>
