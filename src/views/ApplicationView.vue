@@ -27,7 +27,7 @@
       <router-view></router-view>
     </v-container>
   </v-main>
-  <v-footer class="mt-6"></v-footer>
+  <v-footer class="mt-6"> &copy; Copyright 2024 </v-footer>
   <MomentumSheet v-model="showMomentum" />
 </template>
 

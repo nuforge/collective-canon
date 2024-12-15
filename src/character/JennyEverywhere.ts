@@ -39,21 +39,47 @@ JennyEverywhere.addValue(
   new Trait(
     'Mark Your Exits',
     'mdi-map-marker-check',
-    'When you leave a location, you can leave a mark to find your way back',
+    'When entering a new location, can leave a mark to find the way back',
   ),
 )
 JennyEverywhere.addValue(
   new Trait(
     'Yeah... I got this',
     'mdi-thumb-up',
-    'When you spend a point of Determination to obtain a fact, gain 1 bonus Momentum if the fact is useful',
+    'When spending a point of Determination to obtain a fact, gain 1 bonus Momentum if the fact is useful',
   ),
 )
 
-JennyEverywhere.addFocus(new Trait('Wormhole Navigation', 'mdi-image-filter-center-focus-weak'))
-JennyEverywhere.addFocus(new Trait('Wormhole Physics', 'mdi-account-circle-outline'))
-JennyEverywhere.addFocus(new Trait('Helm Operations', 'mdi-image-filter-center-focus-weak'))
-JennyEverywhere.addFocus(new Trait('Quantum Mechanics', 'mdi-image-filter-center-focus-weak'))
-JennyEverywhere.addFocus(new Trait('Ship Recognition', 'mdi-image-filter-center-focus-weak'))
+JennyEverywhere.addFocus(
+  new Trait(
+    'Wormhole Navigation',
+    'mdi-image-filter-center-focus-weak',
+    'Skilled at navigating wormholes',
+  ),
+)
+JennyEverywhere.addFocus(
+  new Trait(
+    'Wormhole Physics',
+    'mdi-image-filter-center-focus-weak',
+    'Skilled at understanding wormhole physics',
+  ),
+)
+JennyEverywhere.addFocus(
+  new Trait('Helm Operations', 'mdi-image-filter-center-focus-weak', 'Skilled at helm operations'),
+)
+JennyEverywhere.addFocus(
+  new Trait(
+    'Quantum Mechanics',
+    'mdi-image-filter-center-focus-weak',
+    'Skilled at quantum mechanics',
+  ),
+)
+JennyEverywhere.addFocus(
+  new Trait(
+    'Ship Recognition',
+    'mdi-image-filter-center-focus-weak',
+    'Skilled at recognizing ships',
+  ),
+)
 
 export default JennyEverywhere
