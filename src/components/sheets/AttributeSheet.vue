@@ -1,5 +1,5 @@
 <template>
-  <v-bottom-sheet inset persistent close-on-content-click :scrim="false">
+  <v-bottom-sheet inset close-on-content-click scrim="#000000">
     <v-card density="compact" class="rounded border-t-md">
       <v-card-title class="d-flex px-1 py-0 justify-space-between border-b-sm align-center">
         <vtag :prepend-icon="attribute.icon" :text="attribute.name" :color="attribute.color"></vtag>

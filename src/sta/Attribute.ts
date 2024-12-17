@@ -8,7 +8,7 @@ class Attribute {
 
   constructor(
     initialLabel: string = 'Attribute',
-    initialValue: number = 0,
+    initialValue: number = 7,
     initialIcon: string = 'mdi-account-circle-outline',
     initialColor: string = '#000000',
     overrideLimit: boolean = false,

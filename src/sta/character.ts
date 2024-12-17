@@ -19,20 +19,20 @@ class Character {
     this._name = name
     this._momentum = new Momentum(0)
     this._attributes = {
-      control: 11,
-      daring: 11,
-      fitness: 11,
-      insight: 11,
-      presence: 11,
-      reason: 11,
+      control: 7,
+      daring: 7,
+      fitness: 7,
+      insight: 7,
+      presence: 7,
+      reason: 7,
     }
     this._departments = {
-      command: 0,
-      conn: 0,
-      engineering: 0,
-      medicine: 0,
-      security: 0,
-      science: 0,
+      command: 1,
+      conn: 1,
+      engineering: 1,
+      medicine: 1,
+      security: 1,
+      science: 1,
     }
   }
 

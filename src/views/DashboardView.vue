@@ -1,5 +1,8 @@
 <template>
   <CharacterSheet />
+  <v-icon icon="$sta-attribute"></v-icon>
+  <v-icon icon="$sta-department"></v-icon>
+
 </template>
 
 <script setup lang="ts">

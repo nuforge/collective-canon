@@ -5,10 +5,14 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import { createVuetify } from 'vuetify'
+import { mdi } from 'vuetify/iconsets/mdi'
+import { md } from 'vuetify/iconsets/md'
 import router from './router'
 
 import 'vuetify/styles'
+import '@fontsource/material-symbols-outlined'
 import '@mdi/font/css/materialdesignicons.css'
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 import {
   VApp,
@@ -23,6 +27,7 @@ import {
   VList,
   VListItem,
   VForm,
+  VTextarea,
   VTable,
   VFileInput,
   VRow,
@@ -47,6 +52,9 @@ import {
   VBottomSheet,
   VChip,
   VChipGroup,
+  VSelect,
+  VAutocomplete,
+  VLigatureIcon,
 } from 'vuetify/components'
 
 const app = createApp(App)
@@ -58,7 +66,31 @@ const vuetify = createVuetify({
   icons: {
     defaultSet: 'mdi', // 'mdi' is Material Design Icons; use 'md' for Material Icons
     aliases: {
-      cancel: 'mdi-cancel', // Example alias
+      'sta-attribute': 'md:edit_attributes',
+      'sta-department': 'md:edit_attributes',
+      'sta-trait': 'mdi-account-box-outline',
+      'sta-talent': 'mdi-account-box-outline',
+      'sta-value': 'mdi-star-four-points-small',
+      'sta-focus': 'mdi-image-filter-center-focus',
+
+      'sta-species': 'mdi-account-box-multiple',
+      'sta-environment': 'mdi-earth-box',
+      'sta-upbringing': 'mdi-home-account',
+      'sta-career': 'mdi-chart-areaspline',
+      'sta-experience': 'mdi-note-edit',
+      'sta-event': 'mdi-note-edit',
+
+      'sta-stepone': 'mdi-account-box',
+      'sta-steptwo': 'mdi-earth-box',
+      'sta-stepthree': 'mdi-home-account',
+      'sta-stepfour': 'mdi-chart-areaspline',
+      'sta-stepfive': 'mdi-note-edit',
+      'sta-stepsix': 'mdi-calendar-account',
+      'sta-stepseven': 'mdi-checkbox-multiple-marked',
+    },
+    sets: {
+      mdi,
+      md,
     },
   },
   components: {
@@ -74,6 +106,7 @@ const vuetify = createVuetify({
     VList,
     VListItem,
     VForm,
+    VTextarea,
     VTable,
     VFileInput,
     VRow,
@@ -91,6 +124,8 @@ const vuetify = createVuetify({
     VAvatar,
     VBadge,
     VDialog,
+    VSelect,
+    VAutocomplete,
     VCheckbox,
     VSpacer,
     VDivider,
@@ -98,6 +133,7 @@ const vuetify = createVuetify({
     VFooter,
     VChip,
     VChipGroup,
+    VLigatureIcon,
   },
 })
 

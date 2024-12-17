@@ -8,11 +8,9 @@
       </v-badge>
     </template>
     <template v-slot:append>
-      <nav>
-        <v-btn icon="mdi-calendar-edit"></v-btn>
-        <vtag :prepend-icon="momentum.momentumIcon" :text="momentum.momentumValue.toString()"
-          color="var(--sta-momentum)" @click="showMomentum = !showMomentum" />
-      </nav>
+      <LogEntry />
+      <vtag :prepend-icon="momentum.momentumIcon" :text="momentum.momentumValue.toString()" color="var(--sta-momentum)"
+        @click="showMomentum = !showMomentum" />
     </template>
   </v-app-bar>
 
@@ -34,6 +32,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import MomentumSheet from '@/components/sheets/MomentumSheet.vue';
+import LogEntry from '@/components/LogEntry.vue';
 import vtag from '@/components/VTag.vue';
 
 import { useCounterStore } from '@/stores/counter';

@@ -30,23 +30,23 @@ JennyEverywhere.addTalent(traits['mental-repository'])
 
 JennyEverywhere.addValue(
   new Trait(
-    'There are No Stupid Questions',
+    'No Stupid Questions',
     'mdi-comment-question-outline',
-    'When you spend a point of Determination to ask the Gamemaster a question, gain 1 bonus Momentum if the answer is useful',
+    'Asks questions that others might not think to ask, leading to new insights',
   ),
 )
 JennyEverywhere.addValue(
   new Trait(
     'Mark Your Exits',
     'mdi-map-marker-check',
-    'When entering a new location, can leave a mark to find the way back',
+    'When entering a new location, leaves a trail of breadcrumbs to find the way back to the exit',
   ),
 )
 JennyEverywhere.addValue(
   new Trait(
     'Yeah... I got this',
     'mdi-thumb-up',
-    'When spending a point of Determination to obtain a fact, gain 1 bonus Momentum if the fact is useful',
+    'Brimming with questionable levels of confidence, even when the odds are against you',
   ),
 )
 
