@@ -51,35 +51,17 @@ JennyEverywhere.addValue(
 )
 
 JennyEverywhere.addFocus(
-  new Trait(
-    'Wormhole Navigation',
-    'mdi-image-filter-center-focus-weak',
-    'Skilled at navigating wormholes',
-  ),
+  new Trait('Wormhole Navigation', '$sta-focus', 'Skilled at navigating wormholes'),
 )
 JennyEverywhere.addFocus(
-  new Trait(
-    'Wormhole Physics',
-    'mdi-image-filter-center-focus-weak',
-    'Skilled at understanding wormhole physics',
-  ),
+  new Trait('Wormhole Physics', '$sta-focus', 'Skilled at understanding wormhole physics'),
+)
+JennyEverywhere.addFocus(new Trait('Helm Operations', '$sta-focus', 'Skilled at helm operations'))
+JennyEverywhere.addFocus(
+  new Trait('Quantum Mechanics', '$sta-focus', 'Skilled at quantum mechanics'),
 )
 JennyEverywhere.addFocus(
-  new Trait('Helm Operations', 'mdi-image-filter-center-focus-weak', 'Skilled at helm operations'),
-)
-JennyEverywhere.addFocus(
-  new Trait(
-    'Quantum Mechanics',
-    'mdi-image-filter-center-focus-weak',
-    'Skilled at quantum mechanics',
-  ),
-)
-JennyEverywhere.addFocus(
-  new Trait(
-    'Ship Recognition',
-    'mdi-image-filter-center-focus-weak',
-    'Skilled at recognizing ships',
-  ),
+  new Trait('Ship Recognition', '$sta-focus', 'Skilled at recognizing ships'),
 )
 
 export default JennyEverywhere

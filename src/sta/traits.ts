@@ -5,7 +5,7 @@ import Trait from '@/sta/Trait'
 export const traits: { [key: string]: Trait } = {
   'species-hologram': new Trait(
     'Species: Hologram',
-    'mdi-account-circle',
+    '$sta-species',
     'Is a holographic lifeform.',
     'trait',
   ),
@@ -17,26 +17,26 @@ export const traits: { [key: string]: Trait } = {
   ),
   'technical-expertise': new Trait(
     'Technical Expertise',
-    'mdi-account-circle-outline',
+    '$sta-talent',
     'Is an expert in technical matters.',
     'talent',
   ),
   'gut-feeling': new Trait(
     'Gut Feeling',
-    'mdi-account-circle-outline',
+    '$sta-talent',
     'Has a strong intuition about things.',
     'talent',
   ),
   'precision-maneuvering': new Trait(
     'Precision Maneuvering',
-    'mdi-gamepad',
+    '$sta-conn',
     'Skilled at precision maneuvering.',
     'talent',
     '#d39e00',
   ),
   'mental-repository': new Trait(
     'Mental Repository',
-    'mdi-atom-variant',
+    '$sta-science',
     'Has a vast mental repository of knowledge.',
     'talent',
     '#2283b1',

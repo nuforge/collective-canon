@@ -3,6 +3,8 @@
   <v-icon icon="$sta-attribute"></v-icon>
   <v-icon icon="$sta-department"></v-icon>
 
+
+  <v-icon icon="$home"></v-icon>
 </template>
 
 <script setup lang="ts">

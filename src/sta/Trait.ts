@@ -10,7 +10,7 @@ class Trait {
 
   constructor(
     initName: string = 'Trait',
-    initIcon: string = 'mdi-star-four-points-outline',
+    initIcon: string = '$sta-trait',
     initDesc: string = 'a trait',
     initType: string = 'trait',
     initColor: string = '#ffffff',

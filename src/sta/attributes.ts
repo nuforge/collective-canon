@@ -19,7 +19,7 @@ export const attributes: Record<string, Attribute> = {
     type: 'attribute',
     description: 'Self-control, discipline and motor skills.',
     color: attributeColor,
-    icon: 'mdi-image-filter-center-focus-strong', // Material Design Icon (if using mdi)
+    icon: '$sta-control', // Material Design Icon (if using mdi)
     link: 'https://example.com/control',
   },
   daring: {
@@ -28,7 +28,7 @@ export const attributes: Record<string, Attribute> = {
     type: 'attribute',
     description: 'Reactions and quick thinking. Bravery.',
     color: attributeColor,
-    icon: 'mdi-octagram', // Material Design Icon (if using mdi)
+    icon: '$sta-daring', // Material Design Icon (if using mdi)
     link: 'https://example.com/control',
   },
   fitness: {
@@ -37,7 +37,7 @@ export const attributes: Record<string, Attribute> = {
     type: 'attribute',
     description: 'Strength, stamina and physical well-being.',
     color: attributeColor,
-    icon: 'mdi-heart-pulse', // Material Design Icon (if using mdi)
+    icon: '$sta-fitness', // Material Design Icon (if using mdi)
     link: 'https://example.com/control',
   },
   presence: {
@@ -46,7 +46,7 @@ export const attributes: Record<string, Attribute> = {
     type: 'attribute',
     description: 'Personality and ability to influence and command.',
     color: attributeColor,
-    icon: 'mdi-account-multiple', // Material Design Icon (if using mdi)
+    icon: '$sta-presence', // Material Design Icon (if using mdi)
     link: 'https://example.com/control',
   },
   insight: {
@@ -55,7 +55,7 @@ export const attributes: Record<string, Attribute> = {
     type: 'attribute',
     description: 'Understand and awareness of other and the environement.',
     color: attributeColor,
-    icon: 'mdi-head-snowflake', // Material Design Icon (if using mdi)
+    icon: '$sta-insight', // Material Design Icon (if using mdi)
     link: 'https://example.com/control',
   },
   reason: {
@@ -64,7 +64,7 @@ export const attributes: Record<string, Attribute> = {
     type: 'attribute',
     description: 'Logic, knowledge and problem solving.',
     color: attributeColor,
-    icon: 'mdi-brain', // Material Design Icon (if using mdi)
+    icon: '$sta-reason', // Material Design Icon (if using mdi)
     link: 'https://example.com/control',
   },
 }

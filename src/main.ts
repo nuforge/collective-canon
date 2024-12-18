@@ -5,14 +5,15 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import { createVuetify } from 'vuetify'
-import { mdi } from 'vuetify/iconsets/mdi'
-import { md } from 'vuetify/iconsets/md'
+import { aliases as mdiAliases, mdi } from 'vuetify/iconsets/mdi'
+import { aliases as mdAliases, md } from 'vuetify/iconsets/md'
+import { aliases as mdioAliases, mdio } from '@/iconsets/mdio'
 import router from './router'
 
 import 'vuetify/styles'
-import '@fontsource/material-symbols-outlined'
 import '@mdi/font/css/materialdesignicons.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
+import '@fontsource/material-symbols-outlined' // Ensure both solid and outlined fonts are loaded
 
 import {
   VApp,
@@ -54,7 +55,6 @@ import {
   VChipGroup,
   VSelect,
   VAutocomplete,
-  VLigatureIcon,
 } from 'vuetify/components'
 
 const app = createApp(App)
@@ -66,12 +66,31 @@ const vuetify = createVuetify({
   icons: {
     defaultSet: 'mdi', // 'mdi' is Material Design Icons; use 'md' for Material Icons
     aliases: {
+      ...mdiAliases,
+      ...mdAliases,
+      ...mdioAliases,
+      home: 'mdio:home',
       'sta-attribute': 'md:edit_attributes',
-      'sta-department': 'md:edit_attributes',
+      'sta-department': 'md:toggle_off',
+
       'sta-trait': 'mdi-account-box-outline',
       'sta-talent': 'mdi-account-box-outline',
       'sta-value': 'mdi-star-four-points-small',
       'sta-focus': 'mdi-image-filter-center-focus',
+
+      'sta-control': 'mdi-image-filter-center-focus-strong',
+      'sta-daring': 'mdi-octagram',
+      'sta-fitness': 'mdi-heart-pulse',
+      'sta-presence': 'mdi-account-multiple',
+      'sta-insight': 'mdi-head-snowflake',
+      'sta-reason': 'mdi-brain',
+
+      'sta-command': 'mdi-account-group',
+      'sta-conn': 'mdi-gamepad',
+      'sta-engineering': 'mdi-wrench',
+      'sta-security': 'mdi-shield-account',
+      'sta-medicine': 'mdi-hospital-box',
+      'sta-science': 'mdi-atom-variant',
 
       'sta-species': 'mdi-account-box-multiple',
       'sta-environment': 'mdi-earth-box',
@@ -91,6 +110,7 @@ const vuetify = createVuetify({
     sets: {
       mdi,
       md,
+      mdio,
     },
   },
   components: {
@@ -133,7 +153,6 @@ const vuetify = createVuetify({
     VFooter,
     VChip,
     VChipGroup,
-    VLigatureIcon,
   },
 })
 
