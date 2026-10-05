@@ -13,7 +13,7 @@ import router from './router'
 import 'vuetify/styles'
 import '@mdi/font/css/materialdesignicons.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
-import '@fontsource/material-symbols-outlined' // Ensure both solid and outlined fonts are loaded
+import '@fontsource/material-symbols-outlined/index.css'
 
 import {
   VApp,
@@ -56,6 +56,8 @@ import {
   VSelect,
   VAutocomplete,
 } from 'vuetify/components'
+
+import { seedDatabase } from '@/utils/seedData'
 
 const app = createApp(App)
 
@@ -160,4 +162,7 @@ app.use(createPinia())
 app.use(router)
 app.use(vuetify)
 
-app.mount('#app')
+// Seed database before mounting the app
+seedDatabase().then(() => {
+  app.mount('#app')
+})

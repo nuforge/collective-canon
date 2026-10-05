@@ -1,4 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import TimelineManager from '@/views/TimelineManager.vue'
+import AdmiralDashboard from '@/views/AdmiralDashboard.vue'
+import GalaxyMap from '@/components/GalaxyMap.vue'
 
 // Views for your pages
 import HomeView from '../views/HomeView.vue'
@@ -11,8 +14,22 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView,
+      redirect: '/timelines',
+    },
+    {
+      path: '/timelines',
+      name: 'timelines',
+      component: TimelineManager,
+    },
+    {
+      path: '/admiral',
+      name: 'admiral',
+      component: AdmiralDashboard,
+    },
+    {
+      path: '/galaxy',
+      name: 'galaxy',
+      component: GalaxyMap,
     },
     {
       path: '/app',
